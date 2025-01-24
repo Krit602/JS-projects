@@ -40,3 +40,16 @@ h1{
     gap: 3rem;
     margin-top: 5rem;
 }
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+}
