@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 50vw;
+    border: 1px solid red;
+}
+
+.card .image{
+    background-image: url(image.avif);
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 95px;
+    background-size: cover;
+}
