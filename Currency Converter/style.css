@@ -30,6 +30,7 @@ form input{
     border: none;
     border: 1px solid lightgrey;
     border-radius: 0.3rem;
+    padding: 0 10px;
 }
 
 form input,select,button{
