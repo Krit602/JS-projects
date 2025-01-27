@@ -36,7 +36,11 @@ const updateFlag = (element)=>{
 
 btn.addEventListener('click', async (e)=>{
     e.preventDefault();
+    updateExchaneRate();
+});
 
+const updateExchaneRate = async()=>{
+    
     const amount = document.querySelector('.amount input');
 
     let amtVal = amount.value;
@@ -45,8 +49,6 @@ btn.addEventListener('click', async (e)=>{
         amtVal = 1;
         amount.value = 1;
     }
-
-    // INR_USD.json
 
     const URL = `${BASE_URL}${toCurr.value}_${fromCurr.value}.json`;
 
@@ -57,7 +59,9 @@ btn.addEventListener('click', async (e)=>{
 
     const finalAmount = amtVal * rate;
 
-    msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`
-})
+    msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+}
+
+window.addEventListener('load', updateExchaneRate)
 
 
